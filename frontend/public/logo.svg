@@ -1,0 +1,45 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <path id="topArc" d="M 26 100 A 74 74 0 1 1 174 100" fill="none" />
+    <path id="botArc" d="M 174 100 A 74 74 0 0 1 26 100" fill="none" />
+    <radialGradient id="shieldBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a1008" />
+      <stop offset="100%" stop-color="#0e0603" />
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="#070503" />
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#c9932a" stroke-width="3" opacity="0.95" />
+  <circle cx="100" cy="100" r="91" fill="none" stroke="#c9932a" stroke-width="1" opacity="0.6" />
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#c9932a" stroke-width="2" opacity="0.9" />
+  <circle cx="100" cy="100" r="60" fill="url(#shieldBg)" />
+  <text fill="#f5eedc" font-size="12.5" font-family="'Montserrat', 'Cinzel', sans-serif" font-weight="800" letter-spacing="0.14em">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">MADHURAKANDY • C.V.N • KALARI</textPath>
+  </text>
+  <text fill="#f5eedc" font-size="11.5" font-family="'Montserrat', 'Cinzel', sans-serif" font-weight="800" letter-spacing="0.22em">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">CALICUT • INDIA</textPath>
+  </text>
+  <g transform="translate(100, 100)">
+    <g transform="rotate(-45)">
+      <path d="M -2.5 -46 C -1.5 -52 1.5 -52 2.5 -46 L 3.5 12 L -3.5 12 Z" fill="#c9932a" />
+      <line x1="0" y1="-45" x2="0" y2="10" stroke="#0e0603" stroke-width="0.8" />
+      <rect x="-9" y="12" width="18" height="3" rx="1.5" fill="#f5eedc" />
+      <rect x="-2.5" y="15" width="5" height="10" rx="1" fill="#c9932a" />
+      <circle cx="0" cy="27" r="3.5" fill="#f5eedc" />
+    </g>
+    <g transform="rotate(45)">
+      <path d="M -2.5 -46 C -1.5 -52 1.5 -52 2.5 -46 L 3.5 12 L -3.5 12 Z" fill="#c9932a" />
+      <line x1="0" y1="-45" x2="0" y2="10" stroke="#0e0603" stroke-width="0.8" />
+      <rect x="-9" y="12" width="18" height="3" rx="1.5" fill="#f5eedc" />
+      <rect x="-2.5" y="15" width="5" height="10" rx="1" fill="#c9932a" />
+      <circle cx="0" cy="27" r="3.5" fill="#f5eedc" />
+    </g>
+    <circle cx="0" cy="0" r="24" fill="#140804" stroke="#f5eedc" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="21" fill="none" stroke="#c9932a" stroke-width="1" stroke-dasharray="2.5 1.5" opacity="0.85" />
+    <circle cx="0" cy="0" r="6" fill="#f5eedc" stroke="#140804" stroke-width="1" />
+    <circle cx="0" cy="0" r="2.5" fill="#140804" />
+    <circle cx="0" cy="-12" r="3" fill="#f5eedc" stroke="#140804" stroke-width="0.8" />
+    <circle cx="0" cy="12" r="3" fill="#f5eedc" stroke="#140804" stroke-width="0.8" />
+    <circle cx="-12" cy="0" r="3" fill="#f5eedc" stroke="#140804" stroke-width="0.8" />
+    <circle cx="12" cy="0" r="3" fill="#f5eedc" stroke="#140804" stroke-width="0.8" />
+  </g>
+</svg>
