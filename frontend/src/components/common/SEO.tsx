@@ -19,7 +19,7 @@ export default function SEO({
   title = 'Madhurakandy C.V.N Kalari — Kalaripayattu Martial Arts & Healing, Kozhikode',
   description = 'Official Madhurakandy C.V.N Kalari, Vengeri, Kozhikode. Experience authentic Vadakkan Kalaripayattu training and healing. Courses in Meythari, Kolthari, Ankathari & Marma Chikitsa in Kozhikode, Kerala.',
   canonical = 'https://madhurakandykalari.com/',
-  image = 'https://madhurakandykalari.com/images/og-cover.jpg',
+  image = 'https://madhurakandykalari.com/images/kalari-logo-banner.png',
   type = 'website',
   breadcrumbs,
   noindex = false,
