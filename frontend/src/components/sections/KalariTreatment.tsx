@@ -115,15 +115,25 @@ export default function KalariTreatment() {
     }, 800);
   };
 
-  const treatmentTitle = treatmentData?.title || 'Traditional Kalari Treatment';
-  const treatmentSubtitle = treatmentData?.subtitle || '🌿 Traditional Pain Relief & Body Care • By Prior Appointment';
+  const treatmentTitle = treatmentData?.title || 'Kalari Chikitsa';
+  const treatmentSubtitle = treatmentData?.subtitle || 'The art of restoring the body';
+  const treatmentBadge = treatmentData?.badge || 'KALARI CHIKITSA';
   const treatmentPhoto = treatmentData?.photo_url || 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop';
-  const highlights = treatmentData?.highlights && treatmentData.highlights.length > 0 ? treatmentData.highlights : [
-    'Spine & Joint Alignment — Disc compression, chronic back pain & sciatica relief',
-    'Sports & Musculoskeletal Care — Sprains, tendon strains & joint recovery',
-    'Traditional Kalari Uzhichil — Deep herbal oil massage for nerve & muscle vigor',
-    'Sacred Dhanwanthari Lineage — Direct diagnostic care & therapy under Gurukkal',
-  ];
+  
+  const defaultLead = 'Training challenges the body. Traditional Kalari Chikitsa helps care for it.';
+  const defaultBody = 'Through traditional massage, Marma-based practices and other Kalari healing traditions, the focus is on restoring movement, relieving physical strain and helping the body regain balance.';
+  const defaultIdeal = 'Ideal for: Recovery, physical wellbeing and those seeking traditional wellness practices.';
+
+  const descParagraphs = treatmentData?.description
+    ? treatmentData.description.split(/\n\n+/).map((p) => p.trim()).filter(Boolean)
+    : [defaultLead, defaultBody];
+
+  const rawHighlights = treatmentData?.highlights && treatmentData.highlights.length > 0
+    ? treatmentData.highlights
+    : [defaultIdeal];
+
+  const idealHighlight = rawHighlights.find((h) => h.toLowerCase().startsWith('ideal for:')) || defaultIdeal;
+  const regularHighlights = rawHighlights.filter((h) => !h.toLowerCase().startsWith('ideal for:'));
 
   return (
     <section
@@ -275,7 +285,7 @@ export default function KalariTreatment() {
                         boxShadow: '0 3px 8px rgba(0,0,0,0.6)',
                       }}
                     >
-                      KALARI TREATMENT
+                      {treatmentBadge}
                     </div>
                   </div>
                 </div>
@@ -287,12 +297,12 @@ export default function KalariTreatment() {
                   flex: '1.4 1 min(100%, 320px)',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '1rem',
+                  gap: '0.9rem',
                   maxWidth: '650px',
                 }}
               >
                 <div>
-                  <p style={{ fontSize: '0.8rem', color: 'var(--color-gold)', margin: '0 0 0.4rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                  <p style={{ fontSize: '0.82rem', color: 'var(--color-gold)', margin: '0 0 0.35rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
                     {treatmentSubtitle}
                   </p>
                   <h3
@@ -308,34 +318,75 @@ export default function KalariTreatment() {
                   </h3>
                 </div>
 
-                {/* Highlights List with Gold Circle Bullets (Matching Course Style) */}
-                <ul
-                  style={{
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: '0.3rem 0 0.8rem',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '0.65rem',
-                  }}
-                >
-                  {highlights.map((h, i) => (
-                    <li
-                      key={i}
+                {/* Body Paragraphs */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                  {descParagraphs.map((para, idx) => (
+                    <p
+                      key={idx}
                       style={{
-                        display: 'flex',
-                        alignItems: 'flex-start',
-                        gap: '0.75rem',
-                        fontSize: '0.9rem',
-                        color: 'rgba(255, 255, 255, 0.88)',
-                        lineHeight: 1.5,
+                        fontSize: idx === 0 ? '1rem' : '0.92rem',
+                        fontWeight: idx === 0 ? 500 : 400,
+                        color: idx === 0 ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.78)',
+                        lineHeight: 1.6,
+                        margin: 0,
                       }}
                     >
-                      <span style={{ color: 'var(--color-gold)', fontSize: '0.85rem', marginTop: '0.15rem' }}>○</span>
-                      <span>{h}</span>
-                    </li>
+                      {para}
+                    </p>
                   ))}
-                </ul>
+                </div>
+
+                {/* Additional Highlights if any */}
+                {regularHighlights.length > 0 && (
+                  <ul
+                    style={{
+                      listStyle: 'none',
+                      padding: 0,
+                      margin: '0.2rem 0',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.5rem',
+                    }}
+                  >
+                    {regularHighlights.map((h, i) => (
+                      <li
+                        key={i}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'flex-start',
+                          gap: '0.75rem',
+                          fontSize: '0.9rem',
+                          color: 'rgba(255, 255, 255, 0.88)',
+                          lineHeight: 1.5,
+                        }}
+                      >
+                        <span style={{ color: 'var(--color-gold)', fontSize: '0.85rem', marginTop: '0.15rem' }}>○</span>
+                        <span>{h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {/* Ideal For Callout Box */}
+                {idealHighlight && (
+                  <div
+                    style={{
+                      background: 'rgba(201, 147, 42, 0.08)',
+                      border: '1px solid rgba(201, 147, 42, 0.25)',
+                      borderLeft: '3px solid var(--color-gold)',
+                      borderRadius: '6px',
+                      padding: '0.75rem 1.1rem',
+                      marginTop: '0.15rem',
+                    }}
+                  >
+                    <div style={{ fontSize: '0.88rem', color: 'rgba(255, 255, 255, 0.92)', lineHeight: 1.5 }}>
+                      <span style={{ color: 'var(--color-gold)', fontWeight: 700, letterSpacing: '0.04em' }}>
+                        Ideal for:
+                      </span>{' '}
+                      {idealHighlight.replace(/^ideal for:\s*/i, '')}
+                    </div>
+                  </div>
+                )}
 
                 {/* Action Button */}
                 <div style={{ marginTop: '0.4rem' }}>

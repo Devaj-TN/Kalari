@@ -235,15 +235,15 @@ const SEED_COURSES: KalariCourse[] = [
   },
   {
     id: 'service-4',
-    title: 'Ayurveda & Kalari Marma Massage Treatment',
+    title: 'Kalari Chikitsa',
     level: 'TREATMENT',
-    badge: 'MARMA CHIKITSA',
-    summary: 'Ancient Marma therapy, joint alignment & therapeutic herbal oil massage',
-    description: 'Authentic Kalari Marma Chikitsa and traditional Uzhichil body treatment under Gurukkal diagnosis for spine & disc alignment, sports injuries, nervous vigor, and deep physical rejuvenation.',
+    badge: 'KALARI CHIKITSA',
+    summary: 'The art of restoring the body through traditional massage & Marma practices',
+    description: 'Training challenges the body. Traditional Kalari Chikitsa helps care for it. Through traditional massage, Marma-based practices and other Kalari healing traditions, the focus is on restoring movement, relieving physical strain and helping the body regain balance.',
     highlights: [
-      'Traditional Marma & spine care',
-      'Herbal oil Uzhichil massage',
-      'By Gurukkal appointment',
+      'Restoring movement & relieving physical strain',
+      'Traditional massage & Marma-based practices',
+      'Ideal for: Recovery, physical wellbeing & traditional wellness',
     ],
     photo_url: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop',
     display_order: 4,
@@ -266,17 +266,17 @@ const SEED_COURSES: KalariCourse[] = [
 ];
 
 const SEED_TREATMENT: KalariTreatmentData = {
-  title: 'Traditional Kalari Treatment',
-  badge: 'KALARI TREATMENT',
+  title: 'Kalari Chikitsa',
+  badge: 'KALARI CHIKITSA',
   tagline: 'Healing',
-  subtitle: '🌿 Traditional Pain Relief & Body Care • By Prior Appointment',
-  description: 'Ancient Ayurvedic Marma Chikitsa and musculoskeletal healing under Gurukkal diagnosis.',
+  subtitle: 'The art of restoring the body',
+  description:
+    'Training challenges the body. Traditional Kalari Chikitsa helps care for it.\n\nThrough traditional massage, Marma-based practices and other Kalari healing traditions, the focus is on restoring movement, relieving physical strain and helping the body regain balance.',
   photo_url: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop',
   highlights: [
-    'Spine & Joint Alignment — Disc compression, chronic back pain & sciatica relief',
-    'Sports & Musculoskeletal Care — Sprains, tendon strains & joint recovery',
-    'Traditional Kalari Uzhichil — Deep herbal oil massage for nerve & muscle vigor',
-    'Sacred Dhanwanthari Lineage — Direct diagnostic care & therapy under Gurukkal',
+    'Restoring movement, relieving physical strain and regaining balance',
+    'Traditional massage & Marma-based healing practices',
+    'Ideal for: Recovery, physical wellbeing and those seeking traditional wellness practices.',
   ],
   timing_info: 'By Prior Appointment',
 };
