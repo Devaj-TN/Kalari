@@ -32,10 +32,12 @@ export default function KalariAbout() {
     return () => window.removeEventListener('kalari_content_updated', loadData);
   }, []);
 
-  const heading = siteContent?.home_about_heading || 'The Sacred Tradition of CVN Kalaripayattu';
-  const tag = siteContent?.home_about_tag || 'ABOUT MADHURAKANDY C.V.N KALARI';
-  const lead = siteContent?.home_about_lead || 'Located in Vengeri, Kozhikode, Madhurakandy C.V.N Kalari upholds the renowned Northern tradition (Vadakkan Sampradayam) of Kalaripayattu. From foundational body conditioning sequences (Meythari) and wooden weapon sparring (Kolthari) to master-level metal weaponry (Ankathari & Urumi), our Kalari offers authentic martial discipline and vital point science.';
-  const body = siteContent?.home_about_body || 'Our consecrated earthen training arena (Kuzhi Kalari) is crafted with traditional red soil and medicinal herbs, fostering agility, breath mastery, and holistic healing under experienced Gurukkals.';
+  const heading = siteContent?.home_about_heading || 'Awaken Your Inner Warrior. Embrace a 3,000-Year Legacy.';
+  const tag = siteContent?.home_about_tag || 'MADURAKANDI CVN KALARI';
+  const lead = siteContent?.home_about_lead || 'More than a martial art. A way of transforming yourself.';
+  const body =
+    siteContent?.home_about_body ||
+    'For centuries, Kalaripayattu has been more than the art of fighting. It has been a journey of discipline, awareness, strength and self-discovery. At Madurakandi CVN Kalari, you step into an ancient tradition where the body is trained, the mind is sharpened and the spirit is quietly awakened.';
   const photo = siteContent?.home_about_photo || 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop';
 
   return (
@@ -187,11 +189,13 @@ export default function KalariAbout() {
             <ScrollReveal delay={0.1}>
               <p
                 style={{
-                  color: 'var(--color-text-muted)',
-                  fontSize: '1rem',
-                  lineHeight: 1.8,
-                  marginBottom: '1.2rem',
-                  textAlign: 'justify',
+                  color: 'var(--color-gold)',
+                  fontSize: 'clamp(1.05rem, 1.4vw, 1.2rem)',
+                  lineHeight: 1.6,
+                  marginBottom: '1rem',
+                  fontWeight: 600,
+                  fontFamily: 'var(--font-serif)',
+                  fontStyle: 'italic',
                 }}
               >
                 {lead}
@@ -203,13 +207,34 @@ export default function KalariAbout() {
                 style={{
                   color: 'var(--color-text-muted)',
                   fontSize: '0.96rem',
-                  lineHeight: 1.8,
-                  marginBottom: '2rem',
-                  textAlign: 'justify',
+                  lineHeight: 1.85,
+                  marginBottom: '1.2rem',
                 }}
               >
                 {body}
               </p>
+
+              <div
+                style={{
+                  borderLeft: '2px solid var(--color-gold)',
+                  paddingLeft: '1rem',
+                  marginTop: '1.2rem',
+                  marginBottom: '1.8rem',
+                }}
+              >
+                <p
+                  style={{
+                    color: 'rgba(255, 255, 255, 0.95)',
+                    fontFamily: 'var(--font-serif)',
+                    fontStyle: 'italic',
+                    fontSize: '1.08rem',
+                    lineHeight: 1.6,
+                    margin: 0,
+                  }}
+                >
+                  Come to learn the art. Stay to discover yourself.
+                </p>
+              </div>
             </ScrollReveal>
 
             <ScrollReveal delay={0.3}>

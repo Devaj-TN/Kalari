@@ -23,10 +23,12 @@ export default function About() {
     };
   }, []);
 
-  const tag = siteContent?.about_page_tag || 'MADHURAKANDY C.V.N KALARI • VENGERI, KOZHIKODE';
-  const title = siteContent?.about_page_title || 'About Us';
-  const lead = siteContent?.about_page_lead || 'Located in Vengeri, Kozhikode, Madhurakandy C.V.N Kalari is a traditional centre dedicated to upholding the authentic Northern (Vadakkan) lineage of Kalaripayattu.';
-  const story = siteContent?.about_page_full_story || 'Practicing inside our consecrated four-foot subterranean red-earth pit (Kuzhi Kalari), students of all ages receive comprehensive training in foundational bodily agility, high kicks, stance postures (Meythari), traditional wooden weaponry (Kolthari), advanced steel blades (Ankathari), and classical Ayurvedic Marma Chikitsa healing under dedicated Gurukkal guidance.';
+  const tag = siteContent?.about_page_tag || 'MADURAKANDI CVN KALARI • VENGERI, KOZHIKODE';
+  const title = siteContent?.about_page_title || 'Awaken Your Inner Warrior. Embrace a 3,000-Year Legacy.';
+  const lead = siteContent?.about_page_lead || 'More than a martial art. A way of transforming yourself.';
+  const story =
+    siteContent?.about_page_full_story ||
+    'For centuries, Kalaripayattu has been more than the art of fighting. It has been a journey of discipline, awareness, strength and self-discovery. At Madurakandi CVN Kalari, you step into an ancient tradition where the body is trained, the mind is sharpened and the spirit is quietly awakened.';
   const photo = siteContent?.about_page_photo;
 
   return (
@@ -104,12 +106,14 @@ export default function About() {
             <p
               style={{
                 color: 'var(--color-gold)',
-                fontSize: 'clamp(1.1rem, 1.5vw, 1.3rem)',
+                fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)',
                 lineHeight: 1.8,
                 maxWidth: '820px',
                 margin: '0 auto 1.5rem',
                 textAlign: 'center',
-                fontWeight: 500,
+                fontWeight: 600,
+                fontFamily: 'var(--font-serif)',
+                fontStyle: 'italic',
               }}
             >
               {lead}
@@ -117,17 +121,42 @@ export default function About() {
 
             <p
               style={{
-                color: 'rgba(245, 238, 230, 0.88)',
+                color: 'rgba(245, 238, 230, 0.9)',
                 fontSize: 'clamp(1.02rem, 1.3vw, 1.15rem)',
                 lineHeight: 2,
                 maxWidth: '820px',
-                margin: '0 auto 2.8rem',
+                margin: '0 auto 2.2rem',
                 textAlign: 'center',
                 fontWeight: 300,
               }}
             >
               {story}
             </p>
+
+            <div
+              style={{
+                maxWidth: '650px',
+                margin: '0 auto 2.8rem',
+                padding: '1.2rem 2rem',
+                background: 'rgba(201, 147, 42, 0.08)',
+                border: '1px solid var(--color-gold-dim)',
+                borderRadius: '6px',
+                textAlign: 'center',
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontStyle: 'italic',
+                  fontSize: 'clamp(1.15rem, 1.8vw, 1.35rem)',
+                  color: 'var(--color-gold-light)',
+                  margin: 0,
+                  lineHeight: 1.6,
+                }}
+              >
+                “Come to learn the art. Stay to discover yourself.”
+              </p>
+            </div>
 
             <div
               style={{

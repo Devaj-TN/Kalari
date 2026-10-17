@@ -464,17 +464,19 @@ const SEED_SITE_CONTENT: KalariSiteContent = {
   hero_bg_image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1600&auto=format&fit=crop',
 
   // Homepage About section snippet
-  home_about_tag: 'ABOUT MADHURAKANDY C.V.N KALARI',
-  home_about_heading: 'The Sacred Tradition of CVN Kalaripayattu',
-  home_about_lead: 'Located in Vengeri, Kozhikode, Madhurakandy C.V.N Kalari upholds the renowned Northern tradition (Vadakkan Sampradayam) of Kalaripayattu. From foundational body conditioning sequences (Meythari) and wooden weapon sparring (Kolthari) to master-level metal weaponry (Ankathari & Urumi), our Kalari offers authentic martial discipline and vital point science.',
-  home_about_body: 'Our consecrated earthen training arena (Kuzhi Kalari) is crafted with traditional red soil and medicinal herbs, fostering agility, breath mastery, and holistic healing under experienced Gurukkals.',
+  home_about_tag: 'MADURAKANDI CVN KALARI',
+  home_about_heading: 'Awaken Your Inner Warrior. Embrace a 3,000-Year Legacy.',
+  home_about_lead: 'More than a martial art. A way of transforming yourself.',
+  home_about_body:
+    'For centuries, Kalaripayattu has been more than the art of fighting. It has been a journey of discipline, awareness, strength and self-discovery. At Madurakandi CVN Kalari, you step into an ancient tradition where the body is trained, the mind is sharpened and the spirit is quietly awakened.',
   home_about_photo: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop',
 
   // Full About Us Page (/about)
-  about_page_tag: 'MADHURAKANDY C.V.N KALARI • VENGERI, KOZHIKODE',
-  about_page_title: 'About Us',
-  about_page_lead: 'Located in Vengeri, Kozhikode, Madhurakandy C.V.N Kalari is a traditional centre dedicated to upholding the authentic Northern (Vadakkan) lineage of Kalaripayattu.',
-  about_page_full_story: 'Practicing inside our consecrated four-foot subterranean red-earth pit (Kuzhi Kalari), students of all ages receive comprehensive training in foundational bodily agility, high kicks, stance postures (Meythari), traditional wooden weaponry (Kolthari), advanced steel blades (Ankathari), and classical Ayurvedic Marma Chikitsa healing under dedicated Gurukkal guidance.',
+  about_page_tag: 'MADURAKANDI CVN KALARI • VENGERI, KOZHIKODE',
+  about_page_title: 'Awaken Your Inner Warrior. Embrace a 3,000-Year Legacy.',
+  about_page_lead: 'More than a martial art. A way of transforming yourself.',
+  about_page_full_story:
+    'For centuries, Kalaripayattu has been more than the art of fighting. It has been a journey of discipline, awareness, strength and self-discovery. At Madurakandi CVN Kalari, you step into an ancient tradition where the body is trained, the mind is sharpened and the spirit is quietly awakened.',
   about_page_photo: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop',
 
   // Homepage Gurukkal section snippet
